@@ -77,7 +77,7 @@ with col1:
 with col2:
     st.subheader("Quick actions")
     if st.button("Refresh jobs"):
-        st.experimental_rerun()
+        st.rerun()
     if st.button("Create demo jobs (5)"):
         # create 5 demo jobs quickly
         for i in range(1, 6):
