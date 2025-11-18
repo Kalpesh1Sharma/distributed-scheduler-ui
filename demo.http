@@ -1,0 +1,25 @@
+### Health Check
+@baseUrl = http://127.0.0.1:5000
+@job_id = a1f3ab7c-817f-4cc7-932f-aca8eeeff0f5
+
+GET http://127.0.0.1:5000/health
+
+### Create Job (runs after 5 seconds)
+### Create Job (runs after 5 seconds)
+POST https://distributed-scheduler.onrender.com/jobs
+Content-Type: application/json
+
+{
+  "delay": 5,
+  "payload": "hello-from-render"
+}
+
+### List Jobs
+GET http://127.0.0.1:5000/jobs
+
+### Get Specific Job
+GET http://127.0.0.1:5000/jobs/{{job_id}}
+
+### Cancel Job
+DELETE http://127.0.0.1:5000/jobs/{{job_id}}
+
