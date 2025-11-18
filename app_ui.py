@@ -8,7 +8,7 @@ st.set_page_config(page_title="Job Scheduler UI", layout="wide")
 st.title("Distributed Job Scheduler — Demo UI")
 
 # --- Config ---
-API_BASE ="https://distributed-scheduler.onrender.com"
+API_BASE ="https://distributed-scheduler-ui.onrender.com"
 # optional: allow overriding with text input (useful for local testing)
 if "override_api" not in st.session_state:
     st.session_state.override_api = ""
